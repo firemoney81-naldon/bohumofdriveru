@@ -69,473 +69,421 @@
 
 
 
-
+	
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "WebPage",
-      "name": "부부운전자보험 완벽 분석 및 견적 비교",
-      "url": "https://yourdomain.com/couple_driver_insurance",
-      "description": "2026년 최신 기준으로 부부운전자보험을 완벽하게 비교하고 분석합니다. 변호사선임비용, 교통사고처리지원금 등 핵심 특약과 합리적인 가입 전략을 제시합니다.",
-      "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "https://yourdomain.com/couple_driver_insurance"
-      },
-      "publisher": {
+      "@type": "Service",
+      "serviceType": "부부운전자보험 비교 서비스",
+      "provider": {
         "@type": "Organization",
-        "name": "보험 전문 컨설팅",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://yourdomain.com/insurance_logo.png"
-        }
+        "name": "부부운전자보험 정보센터",
+        "url": "https://yourdomain.com"
+      },
+      "areaServed": "KR",
+      "description": "부부가 함께 보장받는 운전자보험의 가격 비교, 특약 구성, 법률 비용 지원 안내",
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "운전자보험 플랜",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": { "@type": "Product", "name": "부부 한정 특약 플랜" }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": { "@type": "Product", "name": "부부 개별 가입 플랜" }
+          }
+        ]
       }
     }
     </script>
-    
+
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap');
-        
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
+
+        :root {
+            --main-color: #1a3a5f;
+            --sub-color: #2e5a88;
+            --accent-color: #d9534f;
+            --bg-light: #f8f9fa;
+            --text-dark: #333333;
+            --border-color: #dee2e6;
+        }
+
         body {
             font-family: 'Noto Sans KR', sans-serif;
             margin: 0;
             padding: 0;
             line-height: 1.8;
-            background-color: #f8f9fa; /* 밝고 부드러운 배경색 */
-            color: #343a40;
+            background-color: var(--bg-light);
+            color: var(--text-dark);
         }
+
         header {
-            background-color: #1e88e5; /* 신뢰감을 주는 파란색 계열 */
+            background: linear-gradient(135deg, var(--main-color), var(--sub-color));
             color: white;
-            padding: 3rem 1.5rem;
+            padding: 4rem 1rem;
             text-align: center;
-            position: relative;
-            overflow: hidden;
-            border-bottom-left-radius: 25px;
-            border-bottom-right-radius: 25px;
         }
-        header::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(135deg, rgba(30, 136, 229, 0.95), rgba(0, 74, 173, 0.85));
-            z-index: -1;
-        }
-        h1 {
+
+        header h1 {
             font-size: 2.8rem;
+            margin-bottom: 1rem;
             font-weight: 700;
-            margin: 0 0 0.5rem 0;
-            letter-spacing: -1.5px;
-            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
         }
-        h2 {
-            color: #1e88e5;
-            font-size: 2.0rem;
-            font-weight: 700;
-            margin-top: 2.5rem;
-            padding-bottom: 0.5rem;
-            border-bottom: 3px solid #1e88e5;
-            display: block;
-            text-align: left;
-            padding-left: 0.5rem;
+
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
         }
-        h3 {
-            color: #343a40;
-            font-size: 1.5rem;
-            font-weight: 700;
-            margin-top: 1.5rem;
-            border-left: 5px solid #ff9800; /* 강조 색상 */
-            padding-left: 10px;
+
+        nav {
+            background: #ffffff;
+            border-bottom: 1px solid var(--border-color);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
         }
+
         nav ul {
-            list-style: none;
-            padding: 0;
             display: flex;
             justify-content: center;
-            gap: 1.5rem;
-            margin-top: 1.5rem;
+            list-style: none;
+            padding: 0;
+            margin: 0;
         }
+
         nav a {
-            color: white;
+            display: block;
+            padding: 1rem 1.5rem;
             text-decoration: none;
-            font-weight: 700;
-            padding: 0.6rem 1.2rem;
-            border-radius: 8px;
-            background-color: rgba(255, 255, 255, 0.15);
-            transition: background-color 0.3s ease;
+            color: var(--main-color);
+            font-weight: 500;
+            transition: background 0.3s;
         }
+
         nav a:hover {
-            background-color: rgba(255, 255, 255, 0.3);
+            background: #f0f4f8;
         }
+
         main {
-            max-width: 1000px;
+            max-width: 1100px;
             margin: 2rem auto;
             padding: 0 1.5rem;
         }
+
         section {
-            background-color: white;
-            padding: 2.5rem;
-            border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            background: white;
+            padding: 3rem;
+            border-radius: 8px;
             margin-bottom: 3rem;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
         }
-        section p, section ul, section dl {
-            font-size: 1.1rem;
-            line-height: 1.8;
-            margin-bottom: 1rem;
+
+        h2 {
+            color: var(--main-color);
+            font-size: 2rem;
+            border-left: 6px solid var(--main-color);
+            padding-left: 1rem;
+            margin-bottom: 2rem;
         }
+
+        h3 {
+            font-size: 1.5rem;
+            color: var(--sub-color);
+            margin-top: 2rem;
+        }
+
+        .highlight-box {
+            background-color: #f1f6ff;
+            border: 1px solid #cce0ff;
+            padding: 1.5rem;
+            border-radius: 5px;
+            margin: 1.5rem 0;
+        }
+
         table {
             width: 100%;
             border-collapse: collapse;
-            margin-top: 1.5rem;
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-        }
-        th, td {
-            padding: 1.4rem 1rem;
-            text-align: center;
-            font-size: 1rem;
-            border: 1px solid #dee2e6;
-        }
-        th {
-            background-color: #1e88e5;
-            color: white;
-            font-weight: 700;
-        }
-        td {
-            background-color: #ffffff;
-        }
-        tr:nth-child(even) td {
-            background-color: #f1f8ff; /* 연한 하늘색 */
-        }
-        .highlight {
-            font-weight: 700;
-            color: #d84315; /* 주황색 계열 강조 */
-            font-size: 1.15rem;
-        }
-        .cta-button {
-            display: block;
-            max-width: 400px;
-            margin: 2.5rem auto 1.5rem auto;
-            background-color: #ff9800; /* CTA 강조 색상 */
-            color: white;
-            font-weight: 700;
-            padding: 1.5rem 3rem;
-            border-radius: 50px;
-            text-decoration: none;
-            text-align: center;
-            transition: background-color 0.3s ease, transform 0.2s ease;
-            box-shadow: 0 6px 15px rgba(255, 152, 0, 0.4);
-            font-size: 1.25rem;
-            border: none;
-            cursor: pointer;
-        }
-        .cta-button:hover {
-            background-color: #e68900;
-            transform: translateY(-3px);
-        }
-        .keyword-tags {
             margin: 2rem 0;
-            display: flex;
-            flex-wrap: wrap;
-            gap: 12px;
-            padding: 10px;
-            background-color: #e3f2fd; /* 배경색으로 태그 그룹화 */
+        }
+
+        th, td {
+            border: 1px solid var(--border-color);
+            padding: 1.2rem;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f4f7fa;
+            color: var(--main-color);
+        }
+
+        .form-container {
+            background-color: #ffffff;
+            border: 2px solid var(--main-color);
+            padding: 2.5rem;
             border-radius: 10px;
         }
-        .keyword-tags a {
-            background-color: #ffffff;
-            color: #1e88e5;
-            padding: 8px 16px;
-            border-radius: 25px;
-            font-size: 0.95rem;
-            text-decoration: none;
-            border: 1px solid #bbdefb;
-            transition: background-color 0.3s ease;
-        }
-        .keyword-tags a:hover {
-            background-color: #bbdefb;
-        }
-        .external-links ul {
-            list-style-type: none;
-            padding-left: 0;
-        }
-        .external-links li {
-            margin-bottom: 12px;
-            padding-left: 20px;
-            position: relative;
-        }
-        .external-links li::before {
-            content: '🔗';
-            position: absolute;
-            left: 0;
-            color: #1e88e5;
-        }
-        .external-links a {
-            color: #1e88e5;
-            text-decoration: none;
-            font-weight: 600;
-        }
-        .external-links a:hover {
-            text-decoration: underline;
-        }
-        form {
-            background-color: #f1f8ff;
-            padding: 2.5rem;
-            border-radius: 12px;
-            border: 1px solid #bbdefb;
-            margin-top: 2rem;
-        }
-        .form-group {
+
+        .input-group {
             margin-bottom: 1.5rem;
         }
-        .form-group label {
+
+        .input-group label {
             display: block;
             margin-bottom: 0.5rem;
             font-weight: 700;
-            color: #1e88e5;
         }
-        .form-group input[type="text"],
-        .form-group input[type="email"],
-        .form-group input[type="tel"],
-        .form-group select {
+
+        .input-group input, .input-group select, .input-group textarea {
             width: 100%;
             padding: 0.8rem;
-            border: 1px solid #ccc;
-            border-radius: 8px;
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
             box-sizing: border-box;
-            font-size: 1rem;
         }
+
+        .submit-btn {
+            background-color: var(--main-color);
+            color: white;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 1.2rem;
+            font-weight: 700;
+            transition: background 0.3s;
+        }
+
+        .submit-btn:hover {
+            background-color: #0d213a;
+        }
+
+        .keyword-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin: 2rem 0;
+        }
+
+        .keyword-list span {
+            background: #eee;
+            padding: 5px 12px;
+            border-radius: 15px;
+            font-size: 0.85rem;
+            color: #666;
+        }
+
+        .external-links ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .external-links li {
+            margin-bottom: 0.8rem;
+        }
+
+        .external-links a {
+            color: var(--sub-color);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .external-links a:hover {
+            text-decoration: underline;
+        }
+
         footer {
+            background-color: #333;
+            color: white;
             text-align: center;
-            padding: 2.5rem;
-            font-size: 0.95rem;
-            color: #6c757d;
-            background-color: #e9ecef;
-            border-top-left-radius: 20px;
-            border-top-right-radius: 20px;
-            margin-top: 3rem;
+            padding: 3rem 1rem;
+            margin-top: 4rem;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>부부운전자보험, 현명한 설계로 두 분의 안전을 동시에 지키세요.</h1>
-        <p>2026년 교통 법규 개정안 대비, 부부운전자보험의 핵심과 최적의 가입 전략을 제시합니다.</p>
-        <nav>
-            <ul>
-                <li><a href="#essential">필수 특약</a></li>
-                <li><a href="#comparison">비교 분석표</a></li>
-                <li><a href="#2026info">2026년 정보</a></li>
-                <li><a href="#consult">무료 견적/상담</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <main>
-        <section id="introduction">
-            <h2>🚗 부부운전자보험이란 무엇이며, 왜 지금 필요한가요?</h2>
-            <p>
-                <strong>부부운전자보험</strong>은 부부가 함께 가입하여 두 분 모두의 운전 중 발생할 수 있는 사고에 대비하는 보험 상품입니다. 운전은 일상이지만, 예측 불가능한 사고는 언제든 발생할 수 있습니다. 특히 최근 강화된 <span class="highlight">민식이법</span> 등 교통사고 관련 법규로 인해 운전자보험은 단순한 선택이 아닌, <span class="highlight">필수적인 경제적 방어 수단</span>이 되었습니다. 일반적인 자동차보험은 사고 시 상대방의 피해(대인/대물)를 보상하는 민사적 책임에 중점을 두지만, 운전자보험은 운전자 본인이 짊어질 수 있는 <span class="highlight">형사적 책임 및 행정적 책임</span>에 대한 비용(벌금, 교통사고처리지원금, 변호사선임비용 등)을 보장하는 것이 핵심입니다.
-            </p>
-            <p>
-                많은 분들이 **운전자보험**을 알아보시면서 부부가 개별 가입하는 것과 <span class="highlight">부부운전자보험</span>으로 함께 가입하는 것 중 어떤 것이 더 합리적인지 고민하십니다. 보통 부부가 함께 가입할 경우 개별 가입보다 저렴하거나 비슷한 비용으로 효율적인 보장 설계가 가능합니다. 2인운전자보험을 통해 비용 효율성을 높이고, 보장 범위는 동일하게 가져갈 수 있는 <span class="highlight">부부운전자보험 설계</span>가 최근 추세입니다. 특히 맞벌이 부부나 차량을 공동으로 운행하는 경우, 혹은 한 분이 운전 빈도가 낮더라도 언제든 발생할 수 있는 사고에 대비하여 필수로 고려해야 할 상품입니다.
-            </p>
+<header>
+    <h1>부부운전자보험 완벽 가이드</h1>
+    <p>가족의 안전과 경제적 손실을 방지하기 위한 최선의 선택</p>
+</header>
 
-            <div class="keyword-tags" aria-label="부부운전자보험 관련 주요 키워드">
-                <a href="#consult">부부운전자보험</a>
-                <a href="#consult">운전자보험비교</a>
-                <a href="#essential">변호사선임비용</a>
-                <a href="#essential">교통사고처리지원금</a>
-                <a href="#price">운전자보험가격</a>
-                <a href="#essential">벌금</a>
-                <a href="#introduction">부부가입</a>
-                <a href="#comparison">운전자보험추천</a>
-                <a href="#introduction">가족운전자보험</a>
-                <a href="#essential">자부상</a>
-                <a href="#">운전자보험필요성</a>
-                <a href="#">운전자보험갱신형</a>
-                <a href="#">운전자보험비갱신형</a>
-                <a href="#">운전자보험만기환급형</a>
-                <a href="#">부부운전자보험료</a>
-                <a href="#">2인운전자보험</a>
-                <a href="#">운전자보험가입조건</a>
-                <a href="#">운전자보험보장내용</a>
-                <a href="#">운전자보험순위</a>
-                <a href="#">스쿨존사고</a>
-                <a href="#">운전자보험대인</a>
-                <a href="#">운전자보험대물</a>
-                <a href="#">만원운전자보험</a>
-                <a href="#">운전자보험할인</a>
-                <a href="#">부부운전자보험견적</a>
-                <a href="#">운전자보험특약</a>
-                <a href="#">운전자보험상품</a>
-                <a href="#">운전자보험약관</a>
-                <a href="#">운전자보험보상</a>
-                <a href="#">교통사고형사합의금</a>
-                <a href="#">부부운전자보험장단점</a>
-                <a href="#">운전자보험해지환급금</a>
-                <a href="#">운전자보험면책</a>
-                <a href="#">운전자보험비용</a>
-                <a href="#">운전자보험사</a>
-                <a href="#">운전자보험가입시점</a>
-            </div>
-        </section>
+<nav>
+    <ul>
+        <li><a href="#intro">운전자보험이란</a></li>
+        <li><a href="#benefits">부부 한정 특약 장점</a></li>
+        <li><a href="#comparison">보장 내용 비교</a></li>
+        <li><a href="#checklist">가입 전 체크리스트</a></li>
+        <li><a href="#contact">견적 신청</a></li>
+    </ul>
+</nav>
+
+<main>
+    <section id="intro">
+        <h2>부부운전자보험의 정의와 필요성</h2>
+        <p>운전자보험은 자동차보험에서 보장하지 않는 형사적, 행정적 책임을 보장하기 위해 가입하는 상품입니다. 특히 부부운전자보험은 한 명의 계약으로 부부 두 사람이 동시에 보장받거나, 부부 한정 특약을 통해 개별 가입보다 경제적인 설계를 가능하게 합니다.</p>
+        <p>대한민국 도로교통법의 강화로 인해 민식이법 등 가중처벌 조항이 신설되면서, 운전 중 발생할 수 있는 벌금, 합의금, 변호사 선임 비용에 대한 대비는 이제 필수적인 요소가 되었습니다.</p>
         
-        <section id="essential">
-            <h2>📜 부부운전자보험의 세 가지 핵심 필수 특약 분석</h2>
-            <p>부부운전자보험을 설계할 때 가장 중요한 것은 형사적 책임을 방어해 줄 **핵심 3대 특약**을 충분한 한도로 구성하는 것입니다. 이 특약들이야말로 자동차보험으로 해결할 수 없는 영역을 커버하며, 운전자보험의 존재 이유입니다. 특히 <span class="highlight">부부가 모두 운전하는 환경</span>을 고려하여, 각 보장의 금액 한도를 면밀히 검토해야 합니다.</p>
+        <div class="keyword-list">
+            <span>부부운전자보험추천</span>
+            <span>운전자보험가격비교</span>
+            <span>자동차보험운전자보험차이</span>
+            <span>운전자보험필수특약</span>
+            <span>가족운전자보험</span>
+            <span>운전자보험보장범위</span>
+        </div>
+    </section>
 
-            <h3>1. 교통사고처리지원금 (합의금)</h3>
-            <p>
-                가장 큰 비중을 차지하는 보장입니다. 운전 중 중대 법규 위반 사고로 인해 피해자가 중상해를 입거나 사망했을 때, 형사합의를 위해 지급되는 금액을 보상합니다. 이 금액은 피해자의 상해 정도에 따라 달라지며, 최근에는 <span class="highlight">2억원 또는 2.5억원까지</span> 보장 한도를 높여 가입하는 추세입니다. 이 특약은 운전자의 경제적 부담을 크게 덜어주며, 보험 가입 시 가장 먼저 체크해야 할 항목입니다.
-            </p>
+    <section id="benefits">
+        <h2>부부 한정 특약 및 통합 관리의 장점</h2>
+        <h3>1. 합리적인 보험료 구성</h3>
+        <p>부부가 각각 독립된 보험에 가입할 경우 기본 계약 비용이 중복으로 발생하지만, 부부운전자보험 플랜을 이용하면 불필요한 비용을 최소화할 수 있습니다. 이는 장기적인 가계 경제 관점에서 큰 이점이 됩니다.</p>
+        
+        <h3>2. 사고 시 형사적 책임 완벽 보장</h3>
+        <p>교통사고 처리 지원금(형사합의금), 운전자 벌금(대인/대물), 변호사 선임 비용 등 핵심 3대 보장을 부부 모두가 동일하게 누릴 수 있도록 설계하는 것이 핵심입니다.</p>
+        
+        <div class="highlight-box">
+            <strong>함께 많이 찾는 카테고리 정보:</strong>
+            부부운전자보험을 찾는 분들은 자동차보험료 계산, 무사고 할인 혜택, 실손보험 중복 보장 여부 등을 함께 확인하는 경향이 있습니다.
+        </div>
+    </section>
 
-            <h3>2. 벌금 (대인/대물)</h3>
-            <p>
-                사고 발생 시 운전자에게 부과되는 형사 벌금을 보상합니다. 특히 **스쿨존 내 어린이 교통사고(민식이법)**로 인한 벌금은 최대 3,000만원까지 부과될 수 있습니다. 부부운전자보험은 이 형사 벌금에 대비하여 최소 3,000만원 한도로 설정하는 것이 기본입니다. 2024년 이후 대물 벌금도 추가되어, 대인 벌금과 대물 벌금을 모두 보장하는지 확인해야 합니다.
-            </p>
+    <section id="comparison">
+        <h2>주요 보장 내용 상세 비교</h2>
+        <p>부부운전자보험 선택 시 가장 중요하게 살펴봐야 할 4가지 항목을 표로 정리하였습니다.</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>보장 항목</th>
+                    <th>상세 설명</th>
+                    <th>중요도</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>교통사고 처리 지원금</td>
+                    <td>피해자 사망 또는 중상해 시 형사합의금 지원</td>
+                    <td>매우 높음</td>
+                </tr>
+                <tr>
+                    <td>운전자 벌금 (대인)</td>
+                    <td>도로교통법 개정안에 따른 벌금 실비 보장 (최대 3천만 원)</td>
+                    <td>매우 높음</td>
+                </tr>
+                <tr>
+                    <td>변호사 선임 비용</td>
+                    <td>구속 영장 발부 또는 기소 시 변호사 비용 지원</td>
+                    <td>높음</td>
+                </tr>
+                <tr>
+                    <td>자동차사고 부상 치료비</td>
+                    <td>부상 등급에 따른 위로금 지급</td>
+                    <td>보통</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
 
-            <h3>3. 변호사선임비용 (구속/불구속)</h3>
-            <p>
-                사고 발생으로 인해 수사기관 조사를 받거나 재판에 임해야 할 때 변호사를 선임하는 비용을 보상합니다. 과거에는 구속되었을 때만 보장하는 경우가 많았으나, 현재는 **불구속 상태에서도 경찰 조사 단계부터 보장**하는 상품이 주류입니다. 초기 경찰 조사 단계부터 변호사의 도움을 받는 것이 재판 결과에 매우 중요하므로, <span class="highlight">초기 단계부터 보장되는지</span> 여부를 반드시 확인해야 합니다. 최근에는 보장 한도가 최대 <span class="highlight">5천만원 또는 그 이상</span>으로 상향되고 있습니다.
-            </p>
-        </section>
+    <section id="checklist">
+        <h2>부부운전자보험 가입 전 필수 체크리스트</h2>
+        <p>보험은 가입보다 유지가 중요하며, 사고 시 제대로 된 보상을 받는 것이 목적입니다. 다음 리스트를 반드시 확인하시기 바랍니다.</p>
+        <ul>
+            <li><strong>중복 가입 여부 확인:</strong> 운전자보험의 벌금 및 합의금 특약은 실제 손해액을 보상하는 실손 보장이므로 중복 가입 시 비례 보상됩니다.</li>
+            <li><strong>보장 기간 설정:</strong> 20년 납 20년 만기 또는 80세, 100세 만기 중 부부의 운전 가능 연령대를 고려하여 선택해야 합니다.</li>
+            <li><strong>비갱신형 여부:</strong> 초기 보험료는 갱신형이 저렴할 수 있으나, 장기적인 관점에서는 비갱신형이 유리할 수 있습니다.</li>
+            <li><strong>음주 및 무면허 사고 제외:</strong> 모든 운전자보험은 음주운전, 무면허운전, 뺑소니 사고에 대해서는 보장하지 않습니다.</li>
+        </ul>
+    </section>
 
-        <section id="comparison">
-            <h2>📊 부부운전자보험 핵심 특약 비교 분석표 (2026년 대비)</h2>
-            <p>합리적인 **부부운전자보험료**를 결정하기 위해, 각 특약별 권장 보장 한도와 2026년 개정 가능성이 높은 내용을 비교하여 제시합니다. 이 표를 통해 두 분에게 맞는 최적의 보장 수준을 확인하세요.</p>
-            
-            <table>
-                <thead>
-                    <tr>
-                        <th>보장 항목</th>
-                        <th>2025년 권장 가입 한도 (부부 개별)</th>
-                        <th>2026년 개정 예상 (핵심)</th>
-                        <th>보장 내용 상세</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>교통사고처리지원금</td>
-                        <td><span class="highlight">2.5억원 이상</span></td>
-                        <td>보장 한도 <span class="highlight">3억원으로 상향</span> 및 특정 중상해 시 차등 지급 예상</td>
-                        <td>중대법규위반 사고 시 피해자에게 지급하는 형사합의금 지원.</td>
-                    </tr>
-                    <tr>
-                        <td>변호사선임비용</td>
-                        <td><span class="highlight">5,000만원</span> (경찰조사 단계 포함)</td>
-                        <td>음주/무면허 등 중과실 시 보장 제외 조항 강화 예상</td>
-                        <td>사고 발생 시 변호사 선임 비용 지원.</td>
-                    </tr>
-                    <tr>
-                        <td>벌금 (대인)</td>
-                        <td><span class="highlight">3,000만원</span></td>
-                        <td>변동 없음 (민식이법 기준 유지)</td>
-                        <td>사고로 인한 형사 벌금 지원.</td>
-                    </tr>
-                    <tr>
-                        <td>벌금 (대물)</td>
-                        <td><span class="highlight">500만원</span></td>
-                        <td>변동 없음</td>
-                        <td>타인의 재물 피해에 대한 확정 벌금 지원.</td>
-                    </tr>
-                    <tr>
-                        <td>자동차부상치료비 (자부상)</td>
-                        <td>50만원 ~ 100만원 (14급 기준)</td>
-                        <td>특정 상해 급수 기준 변경 및 자기부담금 신설 가능성</td>
-                        <td>본인이 운전 중 상해를 입었을 때 부상 등급별로 정액 지급. <span class="highlight">(부부 개별 지급)</span></td>
-                    </tr>
-                </tbody>
-            </table>
-
-            <h3>운전자보험 선택 시 추가 고려 사항</h3>
-            <p>
-                부부 운전자보험 선택 시 **갱신형**과 **비갱신형** 중 어떤 형태를 선택할지도 중요한 결정입니다. <span class="highlight">비갱신형</span>은 초기 보험료가 다소 높으나 만기까지 보험료 변동이 없어 장기적으로 유리하며, <span class="highlight">갱신형</span>은 초기 보험료가 저렴하지만 주기적으로 보험료가 인상됩니다. 또한, **무면허, 음주운전** 등은 운전자보험의 모든 보장에서 면책 사유가 되므로, 안전 운전이 가장 중요합니다. <span class="highlight">부부 모두에게 적용되는지</span>, 개별적으로 보장되는 항목은 무엇인지 명확히 확인해야 합니다.
-            </p>
-        </section>
-
-        <section id="2026info">
-            <h2>📅 2026년 운전자보험 관련 법규 및 상품 개정 예상 정보</h2>
-            <p>
-                보험은 법규와 정책의 변화에 민감하게 반응합니다. 2026년에는 보험 시장과 교통 법규에 몇 가지 중요한 변화가 예상됩니다. 이러한 변화를 미리 인지하고 **부부운전자보험**을 준비해야 과도한 비용 지출 없이 최적의 보장을 확보할 수 있습니다.
-            </p>
-            
-            <h3>1. 교통사고처리지원금 한도 상향 및 세분화</h3>
-            <p>
-                최근 물가 상승과 형사합의금 규모 증가 추세를 반영하여, 2026년에는 교통사고처리지원금의 최대 한도가 현행 2억~2.5억원 수준에서 <span class="highlight">3억원 이상으로 상향</span>될 가능성이 높습니다. 또한, 경미한 사고와 중대 사고에 대해 보장 금액이 더욱 세분화되어, 불필요한 보험금 지급을 막고 중대 피해 보장에 집중하는 방향으로 개정될 수 있습니다. 부부운전자보험 가입 시, 최고 한도를 최대한 높여 가입하는 것이 유리할 수 있습니다.
-            </p>
-            <h3>2. 자부상(자동차부상치료비) 보장 기준 강화</h3>
-            <p>
-                **자부상 특약**은 경미한 사고에도 높은 보험금이 지급되는 등 과도한 이용 문제가 지속적으로 제기되어 왔습니다. 2026년에는 <span class="highlight">경미한 상해(12~14급)에 대한 지급 기준이 더욱 까다로워지거나</span>, 일정 금액의 **자기부담금**이 신설되어 보장의 실효성을 높이는 방향으로 변경될 수 있습니다. 부부운전자보험 설계 시 자부상 특약에만 집중하기보다는, 핵심 3대 특약에 집중하는 설계가 더욱 중요해질 전망입니다.
-            </p>
-        </section>
-
-        <section id="consult">
-            <h2>📝 부부운전자보험 무료 견적 및 맞춤 상담 신청</h2>
-            <p>
-                수많은 보험사 상품 중 두 분에게 가장 적합한 <span class="highlight">부부운전자보험</span>을 찾기 위해서는 정확한 비교 분석이 필수입니다. 저희는 고객님의 운전 습관, 차량 운행 거리, 희망 보험료 수준을 고려하여 <span class="highlight">A사, B사, C사 등 다수 보험사의 상품</span>을 비교하고 최적의 **부부운전자보험 설계**를 무료로 제공합니다. 아래 입력란을 작성하여 지금 바로 맞춤 견적을 받아보세요.
-            </p>
-
-            <form action="https://yourdomain.com/submit_inquiry" method="POST">
-                <div class="form-group">
-                    <label for="name">신청자 성함:</label>
-                    <input type="text" id="name" name="name" placeholder="예: 홍길동" required>
+    <section id="contact">
+        <h2>상세 견적 및 상담 신청</h2>
+        <p>본인의 운전 패턴과 부부의 짐 양에 따른 최적의 보험료를 산출해 드립니다. 아래 정보를 입력해 주시면 전문가가 분석하여 연락드립니다.</p>
+        
+        <div class="form-container">
+            <form action="#" method="post">
+                <div class="input-group">
+                    <label for="name">신청자 성함</label>
+                    <input type="text" id="name" name="name" placeholder="성함을 입력하세요" required>
                 </div>
-                <div class="form-group">
-                    <label for="phone">연락 가능한 전화번호:</label>
-                    <input type="tel" id="phone" name="phone" placeholder="예: 010-1234-5678" required>
+                <div class="input-group">
+                    <label for="phone">연락처</label>
+                    <input type="tel" id="phone" name="phone" placeholder="010-0000-0000" required>
                 </div>
-                <div class="form-group">
-                    <label for="spouse_name">배우자 성함:</label>
-                    <input type="text" id="spouse_name" name="spouse_name" placeholder="예: 김철수" required>
-                </div>
-                <div class="form-group">
-                    <label for="driving_frequency">부부 운전 빈도 (주요 운전자 선택):</label>
-                    <select id="driving_frequency" name="driving_frequency" required>
-                        <option value="">선택하세요</option>
-                        <option value="both_equal">부부 모두 비슷함</option>
-                        <option value="main_spouse">주로 배우자가 운전함</option>
-                        <option value="main_self">주로 본인이 운전함</option>
-                        <option value="low">운전 빈도가 매우 낮음</option>
+                <div class="input-group">
+                    <label for="age">부부 평균 연령대</label>
+                    <select id="age" name="age">
+                        <option value="20">20대</option>
+                        <option value="30">30대</option>
+                        <option value="40">40대</option>
+                        <option value="50">50대 이상</option>
                     </select>
                 </div>
-                <div class="form-group">
-                    <label for="type">희망 보험 형태:</label>
-                    <select id="type" name="type" required>
-                        <option value="">선택하세요</option>
-                        <option value="non_renewal">비갱신형 (장기 안정적)</option>
-                        <option value="renewal">갱신형 (초기 보험료 저렴)</option>
-                        <option value="mixed">전문가 추천 (상담 후 결정)</option>
+                <div class="input-group">
+                    <label for="car-type">주요 운전 용도</label>
+                    <select id="car-type" name="car-type">
+                        <option value="commute">출퇴근 및 가정용</option>
+                        <option value="business">업무용</option>
+                        <option value="travel">레저 및 여행용</option>
                     </select>
                 </div>
-                <button type="submit" class="cta-button">무료 맞춤 견적 신청하고 상담받기</button>
+                <div class="input-group">
+                    <label for="message">추가 문의 사항 (보유 중인 보험 등)</label>
+                    <textarea id="message" name="message" rows="5" placeholder="궁금하신 내용을 상세히 적어주시면 체류 시간에 따른 최적의 상담이 가능합니다."></textarea>
+                </div>
+                <div class="input-group" style="display:flex; align-items:center; gap:10px;">
+                    <input type="checkbox" id="agree" name="agree" required style="width:auto;">
+                    <label for="agree" style="margin-bottom:0;">개인정보 수집 및 이용에 동의합니다.</label>
+                </div>
+                <button type="submit" class="submit-btn">최적의 부부 플랜 견적 받기</button>
             </form>
-        </section>
+        </div>
+    </section>
 
-        <section class="external-links">
-            <h2>🔗 신뢰할 수 있는 이사 관련 유용한 정보 및 공식 사이트</h2>
-            <p>운전자보험 및 교통 법규 관련 공인된 정보를 확인하여 현명한 결정을 내리세요.</p>
-            <ul>
-                <li><a href="https://namu.wiki/w/%EC%9A%B4%EC%A0%84%EC%9E%90%20%EB%B3%B4%ED%97%98" target="_blank">운전자 보험 관련 나무위키 정보 (전문 용어 해설)</a></li>
-                <li><a href="https://www.ftc.go.kr/www/cop/bbs/selectBbsList.do?key=221&bbsId=BBSMSTR_000000002347&pageUnit=10&pageIndex=1&searchCnd=0&searchWrd=" target="_blank">공정거래위원회 보험 관련 표준약관 정보</a></li>
-                <li><a href="https://www.fss.or.kr/fss/main/index.do" target="_blank">금융감독원 보험 소비자 정보 포털 (분쟁 조정 및 약관 확인)</a></li>
-                <li><a href="https://www.police.go.kr/main.html" target="_blank">경찰청 교통 법규 및 단속 관련 공식 정보</a></li>
-                <li><a href="https://www.molit.go.kr/USR/policy/m_24/dtl.jsp?id=1285" target="_blank">국토교통부 교통사고 및 관련 정책 정보</a></li>
-            </ul>
-        </section>
+    <section class="external-links">
+        <h2>공인된 신뢰성 정보 및 외부 자료</h2>
+        <p>더 상세한 법률 정보 및 통계 데이터는 아래 사이트에서 확인하실 수 있습니다.</p>
+        <ul>
+            <li><a href="https://namu.wiki/w/%EC%9A%B4%EC%A0%84%EC%9E%90%EB%B3%B4%ED%97%98" target="_blank" rel="nofollow">나무위키: 운전자보험의 상세 정의 및 역사</a></li>
+            <li><a href="https://www.fss.or.kr" target="_blank" rel="nofollow">금융감독원: 보험 가입 시 소비자 유의사항</a></li>
+            <li><a href="https://www.knia.or.kr" target="_blank" rel="nofollow">손해보험협회: 공시실 및 보험료 비교</a></li>
+            <li><a href="https://www.coris.or.kr" target="_blank" rel="nofollow">보험개발원: 자동차 사고 통계 및 데이터 정보</a></li>
+            <li><a href="https://www.police.go.kr" target="_blank" rel="nofollow">경찰청: 교통사고 처리 지침 및 관련 법규 안내</a></li>
+        </ul>
+    </section>
+</main>
 
-    </main>
+<footer>
+    <p>본 콘텐츠는 부부운전자보험에 대한 정보 제공을 목적으로 작성되었습니다.</p>
+    <p>Copyright &copy; 2025 부부운전자보험 정보센터. All Rights Reserved.</p>
+</footer>
 
-    <footer>
-        <p>본 페이지의 모든 정보는 운전자보험 설계에 대한 이해를 돕기 위한 참고 자료이며, 실제 보험 상품의 보장 내용 및 조건은 가입 시점의 약관에 따라 달라질 수 있습니다.</p>
-        <p>&copy; 2025 보험 전문 컨설팅. 부부운전자보험 최적화 정보 제공.</p>
-    </footer>
+<script>
+    // 페이지 내 이동 시 부드러운 스크롤 효과
+    document.querySelectorAll('nav a').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href').substring(1);
+            document.getElementById(targetId).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+
+    // 폼 입력 시 안내 메시지 (체류 시간 증대 유도)
+    const textarea = document.querySelector('textarea');
+    textarea.addEventListener('focus', () => {
+        console.log('사용자가 상세 문의를 작성 중입니다.');
+    });
+</script>
 
 
+
+	
+	
 
 
 
@@ -604,4 +552,5 @@
 <link rel="preload" href="https://static.cdninstagram.com/rsrc.php/v4is0w4/yb/l/ko_KR/rFkiMP1qMyJ.js" as="script" crossorigin="anonymous" nonce="2Mv94Jjk" /><script src="https://static.cdninstagram.com/rsrc.php/v4is0w4/yb/l/ko_KR/rFkiMP1qMyJ.js" data-bootloader-hash="mgYHw9T" async="1" crossorigin="anonymous" data-p=":160" data-btmanifest="1027280358_main" data-c="1"></script>
 <link rel="preload" href="https://static.cdninstagram.com/rsrc.php/v4iT4H4/yV/l/ko_KR/zWc0yd6V0XD.js" as="script" crossorigin="anonymous" nonce="2Mv94Jjk" /><script src="https://static.cdninstagram.com/rsrc.php/v4iT4H4/yV/l/ko_KR/zWc0yd6V0XD.js" data-bootloader-hash="cDTWgQH" async="1" crossorigin="anonymous" data-p=":139" data-btmanifest="1027280358_main" data-c="1"></script>
 <link rel="preload" href="https://static.cdninstagram.com/rsrc.php/v4/yY/r/Eil-fzuGz0e.js" as="script" crossorigin="anonymous" nonce="2Mv94Jjk" /><script src="https://static.cdninstagram.com/rsrc.php/v4/yY/r/Eil-fzuGz0e.js" data-bootloader-hash="qgmbN7Z" async="1" crossorigin="anonymous" data-p=":74" data-btmanifest="1027280358_main" data-c="1"></script>
+
 
